@@ -33,69 +33,21 @@ data/
 Each folder contains episode images plus a JSON/CSV file of queries and ground-truth answers.
 -->
 
-## Repository Structure
 
-<!-- TODO: replace with your actual folder layout -->
-```
-SHARP/
-├── data/               # Benchmark dataset (L1/L2/L3)
-├── src/                # Core SHARP framework (Socratic Questioning + Hypothesis Generation/Verification)
-├── baselines/          # Baseline methods (Oracle, HDR, Socratic-only, etc.)
-├── configs/            # Experiment configs
-├── scripts/            # Run/eval scripts
-├── requirements.txt
-└── README.md
-```
 
-## Installation
 
-<!-- TODO: confirm/adjust Python version and dependencies -->
-```bash
-git clone <this-repo-url>
-cd SHARP
 
-python -m venv venv
-source venv/bin/activate      # Windows: venv\Scripts\activate
 
-pip install -r requirements.txt
-```
-
-<!-- TODO: add any API key / model access setup, e.g.:
-Set your LLM API key as an environment variable:
-export OPENAI_API_KEY="your-key-here"
--->
 
 ## Usage
 
 <!-- TODO: replace with your actual entry-point commands -->
-Run SHARP on a given complexity level:
+Run SHARP:
 ```bash
-python scripts/run_sharp.py --level L3 --model gpt-5.1
+python SHARP_Code/ours_multi_label.py
 ```
 
-Run a baseline for comparison:
-```bash
-python scripts/run_baseline.py --method HDR --level L3 --model gpt-5.1
-```
 
-Evaluate results:
-```bash
-python scripts/evaluate.py --results_dir outputs/L3
-```
 
-## Prompt Templates
 
-SHARP uses three core prompt templates (full text in the paper's Appendix A.2):
-1. **Sub-question generation** — produces the minimal set of atomic sub-questions needed to recover missing concepts for the target query.
-2. **Answer generation after semantic rule extraction** — answers the target question using the induced semantic rules as context.
-3. **Answer generation from episodic evidence only** — baseline prompt that answers directly from raw episodes without semanticization.
 
-<!-- TODO: point to the actual prompt files/templates in your code, e.g. `src/prompts/` -->
-
-## Citation
-
-This work is currently under double-blind review. Citation details will be added upon publication.
-
-## License
-
-<!-- TODO: add your license, e.g. MIT, Apache-2.0, or "Released for review purposes only" -->
