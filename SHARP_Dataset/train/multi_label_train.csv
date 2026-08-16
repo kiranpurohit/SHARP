@@ -1,0 +1,9 @@
+filename,height,width,textual_feedback,number_objects,objects_overlap,shapes_used,colours_used,shape_color_pairs,anomaly_count,is_anomaly,anomaly_rules_applied,background,is_heavy,is_hard,price
+200x100_1_126376.png,100,200,"A yellow circle of size 33px is placed at (125, 46).",1,False,circle,yellow,[{'circle': 'yellow'}],1,True, yellow circles are anomalies,white,False,False,3
+200x100_1_127385.png,100,200,"A green circle of size 39px is placed at (113, 31).",1,False,circle,green,[{'circle': 'green'}],0,False, all green shapes are not anomalies,white,True,False,0
+200x100_1_164213.png,100,200,"A red circle of size 38px is placed at (159, 8).",1,False,circle,red,[{'circle': 'red'}],1,True, all red shapes are anomalies,white,True,False,2
+200x100_1_200739.png,100,200,"A red square of size 43px is placed at (19, 35).",1,False,square,red,[{'square': 'red'}],1,True, all red shapes are anomalies,white,False,False,1
+200x100_1_219452.png,100,200,"A blue circle of size 49px is placed at (65, 15).",1,False,circle,blue,[{'circle': 'blue'}],0,False, blue circles are not anomalies,white,False,True,4
+200x100_1_119918.png,100,200,"A green square of size 37px is placed at (72, 50).",1,False,square,green,[{'square': 'green'}],0,False, all green shapes are not anomalies,white,True,False,5
+200x100_1_238918.png,100,200,"A blue square of size 39px is placed at (28, 19).",1,False,square,blue,[{'square': 'blue'}],1,True, blue squares are anomalies,white,True,True,4
+200x100_1_153804.png,100,200,"A yellow square of size 33px is placed at (32, 15).",1,False,square,yellow,[{'square': 'yellow'}],0,False, yellow squares are not anomalies,white,False,True,0
