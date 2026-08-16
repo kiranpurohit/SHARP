@@ -2,8 +2,6 @@
 
 This repository contains the code and dataset for **SHARP**, an autonomous reasoning framework that enables LLMs to adaptively guide their own reasoning through a **frame-hypothesize-verify** loop. Unlike prior hypothesis-driven reasoning methods that rely on human-prescribed, query-specific prompts, SHARP autonomously formulates clarifying sub-questions (Socratic Questioning) and iteratively generates and verifies hypotheses (Adaptive Hypothesis Generation) to induce latent patterns from scattered, multimodal evidence — without knowing the target query in advance.
 
-> This repository is anonymized for double-blind review. No author, institution, or identifying information is included.
-
 ## Key Idea
 
 - **Socratic Questioning**: decomposes an open-ended query into structured clarifying sub-questions, collapsing an otherwise exponential hypothesis search space into a focused domain.
