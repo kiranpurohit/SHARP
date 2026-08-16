@@ -22,21 +22,7 @@ The benchmark has three graded complexity levels:
 
 Each episode combines Shape (circle, square) × Color (red, green, blue, yellow) × Attributes (anomaly, weight, hardness, price), governed by hidden compositional rules never revealed to the model. Evaluation uses exact-match QA accuracy (%), averaged over 3 runs.
 
-## Baselines
 
-- **Oracle** — uses ground-truth rules as semantic memory.
-- **Episodes Only** — reasons directly over raw episodes without abstraction.
-- **HDR (Query-Agnostic Semanticization)** — hypotheses generated once from episodes, used as static semantic memory.
-- **Direct Query Semanticization** — semantic memory generated in a single step, conditioned on the query.
-- **SHARP (Ours)** — decomposes the query into atomic sub-questions and iteratively constructs query-conditioned semantic memory.
-
-## Implementation Details (from paper)
-
-- Models: GPT-5.1 and Gemini 2.5 Flash (via API), used for question framing, hypothesis generation, verification, and final reasoning.
-- Generate-verify loop steps: K = 3
-- Max reasoning turns: T = 3
-- Temperature = 0, fixed seed (deterministic decoding); each experiment repeated 3× and mean accuracy reported.
-- Compute: single A100 (80GB).
 
 <!-- TODO: fill in with your actual dataset location/format, e.g.:
 Data lives under `data/`, split by complexity level:
